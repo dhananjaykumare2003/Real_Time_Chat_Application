@@ -52,7 +52,7 @@ app.use('/api/messages', messageRouter);
 dbConnect();
 
 if(process.env.NODE_ENV !== "production"){
-    const PORT = process.env.PORT || 5000;
+    const PORT = process.env.PORT || 4000;
     server.listen(PORT, () => {
         console.log(`App is running at PORT : ${PORT}`);
     })
